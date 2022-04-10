@@ -54,13 +54,13 @@ public class Animal {
     }
 
     @NotEmpty(message = "A espécie deverá ser informada!")
-    @Length(min = 5, max = 200, message = "A espécie deverá ter de 3 a 200 caracteres")
+    @Length(min = 3, max = 200, message = "A espécie deverá ter de 3 a 200 caracteres")
     public String getEspecie() {
         return especie;
     }
 
     @NotEmpty(message = "O Ala deverá ser informada!")
-    @Length(min = 1, max = 10, message = "Alas disponíveis: A, B, C, D, E, F. Favor preencher com esses valores")
+    @Length(min = 1, max = 5, message = "Alas disponíveis: A, B, C, D, E, F. Favor preencher com esses valores")
     public String getAlaZoologico() {
         return alaZoologico;
     }
