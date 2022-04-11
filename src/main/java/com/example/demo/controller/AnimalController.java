@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.*;
 import com.example.demo.responses.Response;
 
 @RestController
+@CrossOrigin(origins = "*", allowedHeaders = "*", maxAge = 86400)
 public class AnimalController {
 
     @Autowired
@@ -26,7 +27,7 @@ public class AnimalController {
 
     @RequestMapping("/")
     public String home(){
-        return "Hello World!";
+        return "API Zoologico!";
     }
 
     @ResponseStatus(HttpStatus.OK)
