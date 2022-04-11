@@ -59,7 +59,7 @@ public class Animal {
         return especie;
     }
 
-    @NotEmpty(message = "O Ala deverá ser informada!")
+    @NotEmpty(message = "A Ala deverá ser informada!")
     @Length(min = 1, max = 5, message = "Alas disponíveis: A, B, C, D, E, F. Favor preencher com esses valores")
     public String getAlaZoologico() {
         return alaZoologico;
